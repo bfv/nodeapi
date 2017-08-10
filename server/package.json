@@ -1,0 +1,30 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.1",
+    "@types/express": "^4.0.36",
+    "@types/helmet": "0.0.35",
+    "@types/node": "^8.0.19",
+    "@types/winston": "^2.3.4",
+    "nodemon": "^1.11.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "helmet": "^3.8.1",
+    "winston": "^2.3.1"
+  }
+}
