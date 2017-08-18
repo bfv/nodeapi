@@ -1,0 +1,20 @@
+<div class="container">
+    <table class="table table-hover">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>url</th>
+				<th>description</th>
+			</tr>
+		</thead>
+		<tbody>
+			 <tr *ngFor="let server of servers">
+				<td>{{server.id}}</td>
+				<td><a href="{{server.host}}:{{server.port}}{{server.base}}"><p class="code">{{server.host}}:{{server.port}}{{server.base}}</p></a></td>
+				<td>{{server.description}}</td>
+			</tr> 
+		</tbody>
+	</table>
+	<hr/>
+	<button class="btn btn-sm" (click)="refresh()">Refresh</button>
+</div>

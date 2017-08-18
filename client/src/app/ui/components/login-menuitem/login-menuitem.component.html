@@ -1,0 +1,9 @@
+<div (click)="test()">
+    <div *ngIf="!loginUser">
+        <button md-button routerLink="/login" class="login">Login</button>
+    </div>
+    <div class="loginuser" *ngIf="loginUser">
+        <fa name="user" class="usericon" [mdTooltip]="loginUser.userid"></fa>
+        <div class="logout">Logout</div>
+    </div>
+<div>

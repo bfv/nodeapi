@@ -56,6 +56,8 @@ export class Server {
         this.router.all('*', this.logRequests);
         this.router.get('/', routes['GetHome']);
 
+        this.router.get('/servers', routes['GetServers']);
+
         // 404 etc
         const generic = new GenericRoutes();
         this.router.all('*', generic.handle404);
@@ -64,7 +66,7 @@ export class Server {
     }
 
     private start() {
-        const port = 4200;
+        const port = 4210;
         this.app.listen(port, () => {
             logger.log('info', 'listening on port ' + port);
         });

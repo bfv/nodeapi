@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MdButtonModule, MdInputModule, MdCardModule, MdToolbarModule } from '@angular/material';
+import { MdButtonModule, MdInputModule, MdCardModule, MdToolbarModule, MdTooltipModule } from '@angular/material';
 
 @NgModule({
     imports: [
@@ -7,12 +7,14 @@ import { MdButtonModule, MdInputModule, MdCardModule, MdToolbarModule } from '@a
         MdInputModule,
         MdCardModule,
         MdToolbarModule,
+        MdTooltipModule,
     ],
     exports: [
         MdButtonModule,
         MdInputModule,
         MdCardModule,
         MdToolbarModule,
+        MdTooltipModule
     ],
     declarations: [  ],
     providers: [],

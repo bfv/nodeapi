@@ -1,0 +1,20 @@
+
+.login {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loginuser {
+    width: 50px;
+    margin: 0;
+    align-content: center;
+}
+
+.usericon {
+    margin: 0 auto;
+}
+
+.logout {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    margin: 0;
+}
